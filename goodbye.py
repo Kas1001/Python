@@ -1,2 +1,2 @@
-msg="Goodbye my friends"
+msg="Goodbye my friends and enemies"
 print(msg)
