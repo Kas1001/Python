@@ -22,6 +22,13 @@ def convert(s):
         return int(number)
     except (KeyError, TypeError) as e:
         print(f"Conversion error: {e!r}", file=sys.stderr)
-        return -1
+        raise
 
-print(convert('one nine seven four'.split()), 'a good year!')
+from math import log
+
+def string_log(s):
+    v = convert(s)
+    return log(v)
+
+# print(convert('three'.split()))
+print(string_log('cat dog'.split()))
