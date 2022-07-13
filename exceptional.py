@@ -15,6 +15,8 @@ DIGIT_MAP = {
 
 def convert(s):
     """Convert a string to an integer."""
+    if not isinstance(s, list):
+        raise TypeError("Argument must be a list")
     try:
         number = ''
         for token in s:
