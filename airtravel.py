@@ -1,5 +1,5 @@
 """Model for aircraft flights."""
-
+from pprint import pprint as pp
 
 class Flight:
     """A flight with a particular passenger aircraft."""
@@ -16,6 +16,8 @@ class Flight:
         
         self._number = number
         self._aircraft = aircraft
+        rows, seats = self._aircraft.seating_plan()
+        self._seating = [None] + [{letter: None for letter in seats} for _ in rows]
     
     def aircraft_model(self):
         return self._aircraft.model()
@@ -54,4 +56,4 @@ print(a.seating_plan())
 
 f = Flight("BA758", Aircraft("G-EUPT", "Airbus A319", num_rows=22, num_seats_per_row=6))
 
-print(f.aircraft_model())
+pp(f._seating)
