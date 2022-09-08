@@ -1,0 +1,11 @@
+﻿Monthly mean air temperature,
+Central England Temperature version 2.0.0,
+This file was written for the purposes of a code review exercise do not use for any other purpose,
+data,
+Date_string,Mean_temperature
+01/01/1900,4.39032
+01/01/1901,3.49355
+01/01/1902,4.71613
+01/01/1961,3.9
+01/01/1962,4.29355
+01/01/1963,-2.1
