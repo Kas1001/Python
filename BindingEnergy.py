@@ -5,7 +5,7 @@ def binding_energy_calc(distances):
         distance, r.
         
         Input parameters:
-        distance = list array containing the distance in metres between the objects.
+        distances = list array containing the distance in metres between the objects.
                     
         Output parameters:
         u_r = the binding energy of the two objects, measured in joules.
